@@ -9,4 +9,5 @@ public class Poligon extends Figura{
         this.costats = costats;
     }
     
+    
 }
