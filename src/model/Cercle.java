@@ -3,9 +3,10 @@ package model;
 
 
 final public class Cercle extends Figura{
-    
-    public Cercle(String nom) {
+    double radi;
+    public Cercle(String nom, double radi) {
         super(nom);
+        this.radi = radi;
     }
     
     
