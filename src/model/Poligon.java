@@ -3,9 +3,10 @@ package model;
 
 
 public class Poligon extends Figura{
-    
-    public Poligon(String nom) {
+    int costats;
+    public Poligon(String nom, int costats) {
         super(nom);
+        this.costats = costats;
     }
     
 }
