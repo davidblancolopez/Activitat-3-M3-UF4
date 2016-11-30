@@ -9,7 +9,10 @@ final public class Cercle extends Figura{
         this.radi = radi;
     }
     
+    public String getNom(){
+        return nom;
+    }
     
-    
+   
 
 }
