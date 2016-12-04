@@ -11,7 +11,7 @@ public class vistaAplicatiu {
     * Menú principal de l'aplicatiu.
     * @return 
     */
-    public int mostrarMEnu(){
+    public int mostrarMenuPrincipal(){
         int opcio;
         
         System.out.println("MENÚ: \n"
@@ -39,5 +39,22 @@ public class vistaAplicatiu {
         }
         
         return comprovar;
+    }
+    
+    
+    
+    
+    
+    /**
+     * Opció per a introduir el nom a la figura.
+     * @return 
+     */
+    public String mostrarCrearNom(){
+        String nom;
+        
+        System.out.println("Introdueix el nom de la fugra: ");
+        nom = lector.next();
+        
+        return nom;
     }
 }
