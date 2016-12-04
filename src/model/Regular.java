@@ -4,9 +4,11 @@ package model;
 
 final public class Regular extends Poligon{
     double midaCostats;
+    int costats;
     
     public Regular(String nom, int costats, double midaCostats) {
-        super(nom, costats);
+        super(nom);
+        this.costats = costats;
         this.midaCostats = midaCostats;
     }
     

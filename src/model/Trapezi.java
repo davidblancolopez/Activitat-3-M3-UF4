@@ -5,8 +5,8 @@ package model;
 public class Trapezi extends NoRegular{
     double baseMajor, baseMenor, altura;
     
-    public Trapezi(String nom, int costats, double BM, double bm, double altura) {
-        super(nom, costats);
+    public Trapezi(String nom, double BM, double bm, double altura) {
+        super(nom);
         this.baseMajor = BM;
         this.baseMenor = bm;
         this.altura = altura;

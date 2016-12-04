@@ -5,8 +5,8 @@ package model;
 public class Rombe extends NoRegular{
     double diagonalMajor, diagonalMenor;
     
-    public Rombe(String nom, int costats, double DM, double dm) {
-        super(nom, costats);
+    public Rombe(String nom, double DM, double dm) {
+        super(nom);
         this.diagonalMajor = DM;
         this.diagonalMenor = dm;
     }

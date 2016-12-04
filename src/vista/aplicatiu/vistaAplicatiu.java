@@ -102,7 +102,7 @@ public class vistaAplicatiu {
     
     
     /**
-     * Opció per a introduir la mida de les diagonalsdel rombe.
+     * Opció per a introduir la mida de les diagonals del rombe.
      * @param missatge
      * @return 
      */
@@ -113,5 +113,34 @@ public class vistaAplicatiu {
         midaDiagonals = lector.nextDouble();
         
         return midaDiagonals;
+    }
+    
+    
+    /**
+     * Opció per a introduir les mides de les bases del trapezi.
+     * @param missatge
+     * @return 
+     */
+    public double mostrarIntroduirBase(String missatge){
+        double midaBase;
+        
+        System.out.println(missatge);
+        midaBase = lector.nextDouble();
+        
+        return midaBase;
+    }
+    
+    
+    /**
+     * Opció per a introduir la altura del trapezi.
+     * @return 
+     */
+    public double mostrarIntroduirAltura(){
+        double altura;
+        
+        System.out.println("Introdueix la altura del trapezi: ");
+        altura = lector.nextDouble();
+        
+        return altura;
     }
 }
