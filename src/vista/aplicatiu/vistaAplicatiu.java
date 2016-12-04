@@ -241,7 +241,7 @@ public class vistaAplicatiu {
      * OPCIONS PER A LA CREACIÓ DE FIGURES.*****************************************************
      ******************************************************************************************/
     
-    public void mostrarInformacioCercle(String nom, double radi, double areaCercle){
+    public void mostrarInformacioCercle(String nom, double radi, double areaCercle, double perimetreCercle){
         
     }
     

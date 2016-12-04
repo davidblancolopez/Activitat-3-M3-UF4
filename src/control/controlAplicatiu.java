@@ -170,18 +170,22 @@ public class controlAplicatiu {
             //Veure cercle.
             case 1:
             
+
             break;
             //Veure rombe.
             case 2:
             
+                
             break;
             //Veure trapezi.
             case 3:
             
+                
             break;
             //Veure regular.
             case 4:
 
+                
             break;
         }
     }
