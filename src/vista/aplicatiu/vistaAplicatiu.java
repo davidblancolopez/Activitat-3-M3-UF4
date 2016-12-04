@@ -43,7 +43,9 @@ public class vistaAplicatiu {
     
     
     
-    
+    /**
+     * OPCIONS PER A LA CREACIÓ DE FIGURES.
+     */
     
     /**
      * Opció per a introduir el nom a la figura.
@@ -59,6 +61,15 @@ public class vistaAplicatiu {
     }
     
     
+    public double mostrarIntroduirRadi(){
+        double radi;
+        
+        System.out.println("Introdueix el radi del cecle: ");
+        radi = lector.nextDouble();
+        
+        return radi;
+    }
+    
     /**
      * Opció per a introduir el numero de costats dels poligons regulars.
      * @return 
@@ -71,4 +82,7 @@ public class vistaAplicatiu {
         
         return num;
     }
+    
+    
+    
 }
