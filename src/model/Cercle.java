@@ -26,4 +26,8 @@ final public class Cercle extends Figura {
     public double getAreaCercle(){
         return (pi * Math.pow(radi, radi));
     }
+    
+    public double getPerimetreCercle(){
+        return (2 *  pi * radi);
+    }
 }
