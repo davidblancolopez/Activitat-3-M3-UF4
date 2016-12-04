@@ -1,6 +1,8 @@
 
 package control;
 
+import java.util.ArrayDeque;
+import model.Figura;
 import model.Cercle;
 import model.Rombe;
 import model.Trapezi;
@@ -10,6 +12,16 @@ import vista.aplicatiu.vistaAplicatiu;
 
 public class controlAplicatiu {
     vistaAplicatiu va = new vistaAplicatiu();
+    
+    public ArrayDeque<Figura> coleccioFigures; 
+    
+
+    public ArrayDeque<Figura> getColeccioFigures() {
+        return coleccioFigures;
+    }
+    
+    
+    
     
     
     /**
@@ -94,7 +106,8 @@ public class controlAplicatiu {
             String nomCercle = va.mostrarCrearNom();
             double radi = va.mostrarIntroduirRadi();
             
-            new Cercle(nomCercle, radi);
+            getColeccioFigures().add(new Cercle(nomCercle, radi));
+            
             break;
                         
             case 2:
@@ -107,7 +120,7 @@ public class controlAplicatiu {
             double DM = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1);
             double dm = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2);
             
-            new Rombe(nomRombe, DM, dm);
+            getColeccioFigures().add(new Rombe(nomRombe, DM, dm));
                 
             break;
             
@@ -124,8 +137,8 @@ public class controlAplicatiu {
             
             double altura = va.mostrarIntroduirAltura();
             
-            new Trapezi(nomTrapezi, BM, bm, altura);
-                
+            getColeccioFigures().add(new Trapezi(nomTrapezi, BM, bm, altura));    
+            
             break;
             
             case 4:
@@ -136,7 +149,7 @@ public class controlAplicatiu {
             
             double midaCostatsPoligonRegular = va.mostrarIntroduirMidaCostats();
                 
-            new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular);
+            getColeccioFigures().add(new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular));   
             
             break;
         }
