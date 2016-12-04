@@ -1,6 +1,10 @@
 
 package control;
 
+import model.Cercle;
+import model.Rombe;
+import model.Trapezi;
+import model.Regular;
 import vista.aplicatiu.vistaAplicatiu;
 
 
@@ -86,11 +90,25 @@ public class controlAplicatiu {
         
         switch(opcio){
             case 1:
+                
+            String nomCercle = va.mostrarCrearNom();
+            double radi = va.mostrarIntroduirRadi();
             
+            new Cercle(nomCercle, radi);
             break;
-            
+                        
             case 2:
+                
+            String nomRombe = va.mostrarCrearNom();
+                
+            String missatge1 = "Introdueix la mida de la diagonal major.";
+            String missatge2 = "Introdueix la mida de la diagonal menor.";
             
+            double DM = va.mostrarIntroduirMidaDiagonal(missatge1);
+            double dm = va.mostrarIntroduirMidaDiagonal(missatge2);
+            
+            new Rombe(nomRombe, DM, dm);
+                
             break;
             
             case 3:
