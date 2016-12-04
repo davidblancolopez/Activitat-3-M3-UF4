@@ -17,7 +17,8 @@ public class vistaAplicatiu {
         System.out.println("MENÚ: \n"
                 + "1. Crear figura.\n"
                 + "2. Veure les figures.\n"
-                + "3. Modificar figura.\n");
+                + "3. Modificar figura.\n"
+                + "4. Sortir de l' aplicació");
         
         do{
         System.out.println("Quina opció vols?");
@@ -34,12 +35,44 @@ public class vistaAplicatiu {
     public boolean comprovarMenu1(int opcio){
         boolean comprovar = true;
         
-        if (opcio < 0 && opcio > 3) {
+        if (opcio < 0 && opcio < 5) {
             comprovar = false;
         }
         
         return comprovar;
     }
+    
+    
+    
+    /*******************************************************************************************
+     * SUBMENUS.*****************************************************
+     ******************************************************************************************/
+    
+    public int mostrarMenuCrearFigura(){
+        int opcio;
+        
+        System.out.println("MENÚ: \n"
+                + "Quin tipus de figura vols crear?"
+                + "1. Cercle.\n"
+                + "2. Rombe.\n"
+                + "3. Trapezi.\n"
+                + "4. Poligon regular");
+        
+        do{
+        System.out.println("Quina opció vols?");
+            if (lector.hasNext()) {
+                opcio = 0;
+            }
+        opcio = lector.nextInt();
+        }while(comprovarMenu1(opcio));
+        
+        return 0;
+    }
+    
+    
+    
+    
+    
     
     
     
