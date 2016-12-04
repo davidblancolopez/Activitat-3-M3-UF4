@@ -101,21 +101,42 @@ public class controlAplicatiu {
                 
             String nomRombe = va.mostrarCrearNom();
                 
-            String missatge1 = "Introdueix la mida de la diagonal major.";
-            String missatge2 = "Introdueix la mida de la diagonal menor.";
+            String missatgeDiagonal1 = "Introdueix la mida de la diagonal major.";
+            String missatgeDiagonal2 = "Introdueix la mida de la diagonal menor.";
             
-            double DM = va.mostrarIntroduirMidaDiagonal(missatge1);
-            double dm = va.mostrarIntroduirMidaDiagonal(missatge2);
+            double DM = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1);
+            double dm = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2);
             
             new Rombe(nomRombe, DM, dm);
                 
             break;
             
             case 3:
+                
+            String missatgeBase1 = "Introdueix la mida de la base major.";
+            String missatgeBase2 = "Introdueix la mida de la base menor.";    
+                
             
+            String nomTrapezi = va.mostrarCrearNom(); 
+                
+            double BM = va.mostrarIntroduirBase(missatgeBase1);
+            double bm = va.mostrarIntroduirBase(missatgeBase2);
+            
+            double altura = va.mostrarIntroduirAltura();
+            
+            new Trapezi(nomTrapezi, BM, bm, altura);
+                
             break;
             
             case 4:
+                
+            String nomPoligonRegular = va.mostrarCrearNom();
+            
+            int numCostatsPoligonRegular = va.mostrarIntroduirNumCostats();
+            
+            double midaCostatsPoligonRegular = va.mostrarIntroduirMidaCostats();
+                
+            new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular);
             
             break;
         }
