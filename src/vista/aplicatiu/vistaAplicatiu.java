@@ -57,4 +57,18 @@ public class vistaAplicatiu {
         
         return nom;
     }
+    
+    
+    /**
+     * Opció per a introduir el numero de costats dels poligons regulars.
+     * @return 
+     */
+    public int mostrarCrearNumCostats(){
+        int num;
+        
+        System.out.println("Introdueix el numero de costats de la figura: ");
+        num = lector.nextInt();
+        
+        return num;
+    }
 }
