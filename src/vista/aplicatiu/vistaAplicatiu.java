@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class vistaAplicatiu {
    Scanner lector = new Scanner(System.in);
     
+   /**
+    * Menú principal de l'aplicatiu.
+    * @return 
+    */
     public int mostrarMEnu(){
         int opcio;
         
