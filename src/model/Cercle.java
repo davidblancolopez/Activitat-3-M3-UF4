@@ -23,7 +23,7 @@ final public class Cercle extends Figura {
         this.radi = radi;
     }
 
-    public double areaCercle(){
+    public double getAreaCercle(){
         return (pi * Math.pow(radi, radi));
     }
 }

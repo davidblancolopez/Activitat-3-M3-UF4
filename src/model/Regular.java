@@ -22,7 +22,7 @@ final public class Regular extends Poligon{
     }
 
     
-    public double getArea(double midaCostats) {
+    public double getAreaRegular(double midaCostats) {
         double angle = 360 / costats;
         double tangent = Math.tan(Math.toRadians(angle /2));
         double apotema = midaCostats / tangent;
