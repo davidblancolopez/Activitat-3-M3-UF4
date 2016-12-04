@@ -101,7 +101,11 @@ public class vistaAplicatiu {
     }
     
     
-    
+    /**
+     * Opció per a introduir la mida de les diagonalsdel rombe.
+     * @param missatge
+     * @return 
+     */
     public double mostrarIntroduirMidaDiagonal(String missatge){
         double midaDiagonals;
         
