@@ -46,7 +46,10 @@ public class controlAplicatiu {
     }
     
     public void mostrarFigura(){
+        int opcio;
         
+        opcio = va.mostrarMenuVeureFigures();
+        respostaUsuariMenuVeureFigures(opcio);
     }
     
     public void modificarFigura(){
@@ -151,6 +154,39 @@ public class controlAplicatiu {
             
             break;
         }
+       
     }
+        
+        
+        
+        
+    /**
+     * 
+     * @param opcio 
+     */ 
+    public void respostaUsuariMenuVeureFigures(int opcio){
+        
+        switch(opcio){
+            case 1:
+            
+            break;
+            
+            case 2:
+            
+            break;
+            
+            case 3:
+            
+            break;
+            
+            case 4:
+
+            break;
+        }
+    }
+     
+    
+    
+    
             
 }

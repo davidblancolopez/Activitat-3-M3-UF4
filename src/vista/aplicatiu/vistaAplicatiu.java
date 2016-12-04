@@ -52,6 +52,10 @@ public class vistaAplicatiu {
      * SUBMENU*****************************************************
      ******************************************************************************************/
     
+    /**
+     * Menú de creació de figures.
+     * @return 
+     */
     public int mostrarMenuCrearFigura(){
         int opcio;
         
@@ -73,6 +77,32 @@ public class vistaAplicatiu {
         return opcio;
     }
     
+    
+    
+    /**
+     * Menú per a seleccionar quina figura es vol mostrar per pantalla.
+     * @return 
+     */
+    public int mostrarMenuVeureFigures(){
+        int opcio;
+        
+        System.out.println("MENÚ: \n"
+                + "Quin tipus de figura vols veure?"
+                + "1. Cercle.\n"
+                + "2. Rombe.\n"
+                + "3. Trapezi.\n"
+                + "4. Poligon regular");
+        
+        do{
+        System.out.println("Quina opció vols?");
+            if (lector.hasNext()) {
+                opcio = 0;
+            }
+        opcio = lector.nextInt();
+        }while(comprovarMenu1(opcio));
+        
+        return opcio;
+    }
     
     
     
