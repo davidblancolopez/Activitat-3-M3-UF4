@@ -32,8 +32,6 @@ public class controlAplicatiu {
         do{
         opcio = va.mostrarMenuPrincipal();
         respostaUsuariMenuPrincipal(opcio);
-        
-        
         }while(opcio != 4);
     }
     
@@ -87,7 +85,7 @@ public class controlAplicatiu {
             break;
             
             case 4:
-            
+            System.exit(0);
             break;
         }
     }
