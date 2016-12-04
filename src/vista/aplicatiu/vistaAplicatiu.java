@@ -60,7 +60,10 @@ public class vistaAplicatiu {
         return nom;
     }
     
-    
+    /**
+     * Opció per a introduir el radi del cercle.
+     * @return 
+     */
     public double mostrarIntroduirRadi(){
         double radi;
         
@@ -84,5 +87,27 @@ public class vistaAplicatiu {
     }
     
     
+    /**
+     * Opció per a introduir la mida dels costats.
+     * @return 
+     */
+    public double mostrarIntroduirMidaCostats(){
+        double midaCostats;
+        
+        System.out.println("Introdueix la mida costats: ");
+        midaCostats = lector.nextDouble();
+        
+        return midaCostats;
+    }
     
+    
+    
+    public double mostrarIntroduirMidaDiagonal(String missatge){
+        double midaDiagonals;
+        
+        System.out.println(missatge);
+        midaDiagonals = lector.nextDouble();
+        
+        return midaDiagonals;
+    }
 }
