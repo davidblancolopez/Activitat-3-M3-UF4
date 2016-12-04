@@ -28,10 +28,14 @@ public class vistaAplicatiu {
         opcio = lector.nextInt();
         }while(comprovarMenu1(opcio));
         
-        return 0;
+        return opcio;
     }
     
-    
+    /**
+     * MEtode que comprova que la opció introduida als menus es correcte.
+     * @param opcio
+     * @return 
+     */
     public boolean comprovarMenu1(int opcio){
         boolean comprovar = true;
         
@@ -45,7 +49,7 @@ public class vistaAplicatiu {
     
     
     /*******************************************************************************************
-     * SUBMENUS.*****************************************************
+     * SUBMENU*****************************************************
      ******************************************************************************************/
     
     public int mostrarMenuCrearFigura(){
@@ -66,7 +70,7 @@ public class vistaAplicatiu {
         opcio = lector.nextInt();
         }while(comprovarMenu1(opcio));
         
-        return 0;
+        return opcio;
     }
     
     
