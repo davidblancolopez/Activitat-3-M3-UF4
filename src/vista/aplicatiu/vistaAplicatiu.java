@@ -43,9 +43,14 @@ public class vistaAplicatiu {
     
     
     
-    /**
-     * OPCIONS PER A LA CREACIÓ DE FIGURES.
-     */
+    
+    
+    /*******************************************************************************************
+     * OPCIONS PER A LA CREACIÓ DE FIGURES.*****************************************************
+     ******************************************************************************************/
+    
+    
+    
     
     /**
      * Opció per a introduir el nom a la figura.
@@ -77,7 +82,7 @@ public class vistaAplicatiu {
      * Opció per a introduir el numero de costats dels poligons regulars.
      * @return 
      */
-    public int mostrarCrearNumCostats(){
+    public int mostrarIntroduirNumCostats(){
         int num;
         
         System.out.println("Introdueix el numero de costats de la figura: ");
