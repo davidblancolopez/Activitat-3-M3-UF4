@@ -19,7 +19,8 @@ final public class Regular extends Poligon{
         this.midaCostats = mida;
     }
 
-    public double getArea() {
+    
+    public double getArea(double midaCostats) {
         double angle = 360 / costats;
         double tangent = Math.tan(Math.toRadians(angle /2));
         double apotema = midaCostats / tangent;
