@@ -28,11 +28,10 @@ public class controlAplicatiu {
      * Metode que controla tot l'aplicatiu.
      */
     public void aplicatiu(){
-        int opcio;
         do{
-        opcio = va.mostrarMenuPrincipal();
-        respostaUsuariMenuPrincipal(opcio);
-        }while(opcio != 4);
+        respostaUsuariMenuPrincipal();
+        }while(true);
+        
     }
     
    
@@ -72,7 +71,10 @@ public class controlAplicatiu {
      * Metode que conté les opcions del menu principal.
      * @param opcio 
      */
-    public void respostaUsuariMenuPrincipal(int opcio){
+    public void respostaUsuariMenuPrincipal(){
+        int opcio;
+        
+        opcio = va.mostrarMenuPrincipal();
         
         switch(opcio){
             case 1:
