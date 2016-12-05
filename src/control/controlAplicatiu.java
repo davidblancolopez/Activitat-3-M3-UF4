@@ -13,13 +13,8 @@ import vista.aplicatiu.vistaAplicatiu;
 public class controlAplicatiu {
     vistaAplicatiu va = new vistaAplicatiu();
     
-    public ArrayDeque<Figura> coleccioFigures; 
-    
-
-    public ArrayDeque<Figura> getColeccioFigures() {
-        return coleccioFigures;
-    }
-    
+    ArrayDeque<Figura> coleccioFigures; 
+        
     
     
     
@@ -109,7 +104,7 @@ public class controlAplicatiu {
             String nomCercle = va.mostrarCrearNom();
             double radi = va.mostrarIntroduirRadi();
             
-            getColeccioFigures().add(new Cercle(nomCercle, radi));
+            coleccioFigures.add(new Cercle(nomCercle, radi));
             
             break;
                         
@@ -123,7 +118,7 @@ public class controlAplicatiu {
             double DM = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1);
             double dm = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2);
             
-            getColeccioFigures().add(new Rombe(nomRombe, DM, dm));
+            coleccioFigures.add(new Rombe(nomRombe, DM, dm));
                 
             break;
             
@@ -140,7 +135,7 @@ public class controlAplicatiu {
             
             double altura = va.mostrarIntroduirAltura();
             
-            getColeccioFigures().add(new Trapezi(nomTrapezi, BM, bm, altura));    
+            coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura));    
             
             break;
             
@@ -152,7 +147,7 @@ public class controlAplicatiu {
             
             double midaCostatsPoligonRegular = va.mostrarIntroduirMidaCostats();
                 
-            getColeccioFigures().add(new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular));   
+            coleccioFigures.add(new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular));   
             
             break;
         }
