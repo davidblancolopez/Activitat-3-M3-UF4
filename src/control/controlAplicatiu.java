@@ -41,9 +41,9 @@ public class controlAplicatiu {
     }
 
     public void modificarFigura() {
-        String nom;
         
-        nom = va.mostrarDemanarNomFiguraModificar();
+        respostaUsuariMenuModificar();
+        
         
         
     }
@@ -191,10 +191,40 @@ public class controlAplicatiu {
     
     
     
-    public void buscarFiguraModificar(String nom){
-        for (int i = 0; i < coleccioFigures.size(); i++) {
-            
+    
+    
+    
+    
+    
+    
+    public void respostaUsuariMenuModificar() {
+        int opcio;
+        String nom;
+
+        opcio = va.mostrarMenuModificarFigures();
+        nom = va.mostrarDemanarNomFiguraModificar();
+
+        switch (opcio) {
+            case 1:
+                
+                break;
+
+            case 2:
+
+                break;
+
+            case 3:
+
+                break;
+
+            case 4:
+                
+                break;
         }
+    }
+    
+    public void buscarFiguraModificar(String nom){
+
     }
     
     
