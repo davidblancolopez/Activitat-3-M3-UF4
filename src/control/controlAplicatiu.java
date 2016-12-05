@@ -1,4 +1,3 @@
-
 package control;
 
 import java.util.ArrayDeque;
@@ -10,193 +9,179 @@ import model.Trapezi;
 import model.Regular;
 import vista.aplicatiu.vistaAplicatiu;
 
-
 public class controlAplicatiu {
+
     vistaAplicatiu va = new vistaAplicatiu();
-    
-    ArrayList<Figura> coleccioFigures; 
-        
-    
-    
-    
-    
+
+    private ArrayList<Figura> coleccioFigures;
+
     /**
      * Metode que controla tot l'aplicatiu.
      */
-    public void aplicatiu(){
-        do{
-        respostaUsuariMenuPrincipal();
-        }while(true);
-        
+    public void aplicatiu() {
+        do {
+            respostaUsuariMenuPrincipal();
+        } while (true);
+
     }
-    
-   
-    
-    public void crearFigura(){
+
+    public void crearFigura() {
         int opcio;
-        
+
         opcio = va.mostrarMenuCrearFigura();
         respostaUsuariMenuCrear(opcio);
-        
+
     }
-    
-    public void mostrarFigura(){
+
+    public void mostrarFigura() {
         int opcio;
-        
+
         opcio = va.mostrarMenuVeureFigures();
         respostaUsuariMenuVeureFigures(opcio);
     }
-    
-    public void modificarFigura(){
-        
+
+    public void modificarFigura() {
+
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     /**
      * Metode que conté les opcions del menu principal.
-     * @param opcio 
+     *
+     * @param opcio
      */
-    public void respostaUsuariMenuPrincipal(){
+    public void respostaUsuariMenuPrincipal() {
         int opcio;
-        
+
         opcio = va.mostrarMenuPrincipal();
-        
-        switch(opcio){
+
+        switch (opcio) {
             case 1:
-            crearFigura();
-            break;
-            
+                crearFigura();
+                break;
+
             case 2:
-            
-            break;
-            
+
+                break;
+
             case 3:
-            
-            break;
-            
+
+                break;
+
             case 4:
-            System.exit(0);
-            break;
+                System.exit(0);
+                break;
         }
     }
-    
-    
-    
+
     /**
      * Metode que conté les opcions del menu crear figures.
-     * @param opcio 
+     *
+     * @param opcio
      */
-    public void respostaUsuariMenuCrear(int opcio){
-        
-        switch(opcio){
+    public void respostaUsuariMenuCrear(int opcio) {
+
+        switch (opcio) {
             case 1:
-                
-            String nomCercle = va.mostrarCrearNom();
-            double radi = va.mostrarIntroduirRadi();
-            
-            coleccioFigures.add(new Cercle(nomCercle, radi));
-            
-            break;
-                        
+
+                String nomCercle = va.mostrarCrearNom();
+                double radi = va.mostrarIntroduirRadi();
+
+                coleccioFigures.add(new Cercle(nomCercle, radi));
+
+                break;
+
             case 2:
-                
-            String nomRombe = va.mostrarCrearNom();
-                
-            String missatgeDiagonal1 = "Introdueix la mida de la diagonal major.";
-            String missatgeDiagonal2 = "Introdueix la mida de la diagonal menor.";
-            
-            double DM = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1);
-            double dm = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2);
-            
-            coleccioFigures.add(new Rombe(nomRombe, DM, dm));
-                
-            break;
-            
+
+                String nomRombe = va.mostrarCrearNom();
+
+                String missatgeDiagonal1 = "Introdueix la mida de la diagonal major.";
+                String missatgeDiagonal2 = "Introdueix la mida de la diagonal menor.";
+
+                double DM = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1);
+                double dm = va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2);
+
+                coleccioFigures.add(new Rombe(nomRombe, DM, dm));
+
+                break;
+
             case 3:
-                
-            String missatgeBase1 = "Introdueix la mida de la base major.";
-            String missatgeBase2 = "Introdueix la mida de la base menor.";    
-                
-            
-            String nomTrapezi = va.mostrarCrearNom(); 
-                
-            double BM = va.mostrarIntroduirBase(missatgeBase1);
-            double bm = va.mostrarIntroduirBase(missatgeBase2);
-            
-            double altura = va.mostrarIntroduirAltura();
-            
-            coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura));    
-            
-            break;
-            
+
+                String missatgeBase1 = "Introdueix la mida de la base major.";
+                String missatgeBase2 = "Introdueix la mida de la base menor.";
+
+                String nomTrapezi = va.mostrarCrearNom();
+
+                double BM = va.mostrarIntroduirBase(missatgeBase1);
+                double bm = va.mostrarIntroduirBase(missatgeBase2);
+
+                double altura = va.mostrarIntroduirAltura();
+
+                coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura));
+
+                break;
+
             case 4:
-                
-            String nomPoligonRegular = va.mostrarCrearNom();
-            
-            int numCostatsPoligonRegular = va.mostrarIntroduirNumCostats();
-            
-            double midaCostatsPoligonRegular = va.mostrarIntroduirMidaCostats();
-                
-            coleccioFigures.add(new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular));   
-            
-            break;
+
+                String nomPoligonRegular = va.mostrarCrearNom();
+
+                int numCostatsPoligonRegular = va.mostrarIntroduirNumCostats();
+
+                double midaCostatsPoligonRegular = va.mostrarIntroduirMidaCostats();
+
+                coleccioFigures.add(new Regular(nomPoligonRegular, numCostatsPoligonRegular, midaCostatsPoligonRegular));
+
+                break;
         }
-       
+
     }
-        
-        
-        
-        
+
     /**
-     * 
-     * @param opcio 
-     */ 
-    public void respostaUsuariMenuVeureFigures(int opcio){
-        
-        switch(opcio){
+     *
+     * @param opcio
+     */
+    public void respostaUsuariMenuVeureFigures(int opcio) {
+
+        switch (opcio) {
             //Veure cercle.
             case 1:
                 for (int i = 0; i < coleccioFigures.size(); i++) {
-                    if(coleccioFigures.get(i) instanceof Cercle) {
+                    if (coleccioFigures.get(i) instanceof Cercle) {
                         coleccioFigures.get(i).toString();
                     }
                 }
 
-            break;
-            
+                break;
+
             //Veure rombe.
             case 2:
-            
-                
-            break;
-            
+                for (int i = 0; i < coleccioFigures.size(); i++) {
+                    if (coleccioFigures.get(i) instanceof Rombe) {
+                        coleccioFigures.get(i).toString();
+                    }
+                }
+
+                break;
+
             //Veure trapezi.
             case 3:
-            
-                
-            break;
-            
+                for (int i = 0; i < coleccioFigures.size(); i++) {
+                    if (coleccioFigures.get(i) instanceof Trapezi) {
+                        coleccioFigures.get(i).toString();
+                    }
+                }
+
+                break;
+
             //Veure regular.
             case 4:
+                for (int i = 0; i < coleccioFigures.size(); i++) {
+                    if (coleccioFigures.get(i) instanceof Regular) {
+                        coleccioFigures.get(i).toString();
+                    }
+                }
 
-                
-            break;
+                break;
         }
     }
-     
-    
-    
-    
-            
+
 }
