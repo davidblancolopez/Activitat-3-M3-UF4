@@ -30,4 +30,11 @@ final public class Cercle extends Figura {
     public double getPerimetreCercle(){
         return (2 *  pi * radi);
     }
+
+    @Override
+    public String toString() {
+        return "Cercle{" + "radi=" + radi + '}';
+    }
+    
+    
 }

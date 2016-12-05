@@ -17,4 +17,14 @@ public class Rombe extends NoRegular{
         return ((diagonalMajor * diagonalMenor) /2);
     }
 
+    
+    
+    @Override
+    public String toString() {
+        return "Rombe{" + "diagonalMajor=" + diagonalMajor + ", diagonalMenor=" + diagonalMenor + ", nombreCostats=" + nombreCostats + '}';
+    }
+    
+    
+    
+
 }

@@ -17,5 +17,12 @@ public class Trapezi extends NoRegular{
     public double getAreaTrapezi(){
         return (( (baseMajor + baseMenor) /2) * altura);
     }
+
+    @Override
+    public String toString() {
+        return "Trapezi{" + "baseMajor=" + baseMajor + ", baseMenor=" + baseMenor + ", altura=" + altura + ", nombreCostats=" + nombreCostats + '}';
+    }
+    
+    
     
 }

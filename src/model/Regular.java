@@ -33,5 +33,14 @@ final public class Regular extends Poligon{
     public double getPerimetre(){
         return costats * midaCostats;
     }
+
+    
+    
+    @Override
+    public String toString() {
+        return "Regular{" + "midaCostats=" + midaCostats + ", costats=" + costats + '}';
+    }
+    
+    
     
 }
