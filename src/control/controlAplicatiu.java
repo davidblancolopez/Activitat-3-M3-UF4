@@ -2,6 +2,7 @@
 package control;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import model.Figura;
 import model.Cercle;
 import model.Rombe;
@@ -13,7 +14,7 @@ import vista.aplicatiu.vistaAplicatiu;
 public class controlAplicatiu {
     vistaAplicatiu va = new vistaAplicatiu();
     
-    ArrayDeque<Figura> coleccioFigures; 
+    ArrayList<Figura> coleccioFigures; 
         
     
     
@@ -166,19 +167,26 @@ public class controlAplicatiu {
         switch(opcio){
             //Veure cercle.
             case 1:
-            
+                for (int i = 0; i < coleccioFigures.size(); i++) {
+                    if(coleccioFigures.get(i) instanceof Cercle) {
+                        coleccioFigures.get(i).toString();
+                    }
+                }
 
             break;
+            
             //Veure rombe.
             case 2:
             
                 
             break;
+            
             //Veure trapezi.
             case 3:
             
                 
             break;
+            
             //Veure regular.
             case 4:
 
