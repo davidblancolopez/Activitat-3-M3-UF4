@@ -238,9 +238,16 @@ public class vistaAplicatiu {
     
     
     /*******************************************************************************************
-     * OPCIONS PER A MOSTRAR FIGURES.*****************************************************
+     * OPCIONS PER A DEMANA NOM DE LA FIGURA A MODIFICAR.*****************************************************
      ******************************************************************************************/
     
-    
+    public String mostrarDemanarNomFiguraModificar(){
+        String nom;
+        
+        System.out.println("Introdueix el nóm de la figura que vols modificar: ");
+        nom = lector.next(); 
+        
+        return nom;
+    }
     
 }

@@ -41,7 +41,11 @@ public class controlAplicatiu {
     }
 
     public void modificarFigura() {
-
+        String nom;
+        
+        nom = va.mostrarDemanarNomFiguraModificar();
+        
+        
     }
 
     /**
@@ -184,4 +188,16 @@ public class controlAplicatiu {
         }
     }
 
+    
+    
+    
+    public void buscarFiguraModificar(String nom){
+        for (int i = 0; i < coleccioFigures.size(); i++) {
+            
+        }
+    }
+    
+    
+    
+    
 }
