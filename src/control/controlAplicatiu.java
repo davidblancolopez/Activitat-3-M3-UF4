@@ -64,11 +64,11 @@ public class controlAplicatiu {
                 break;
 
             case 2:
-
+                mostrarFigura();
                 break;
 
             case 3:
-
+                modificarFigura();
                 break;
 
             case 4:
