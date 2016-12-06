@@ -21,12 +21,11 @@ public class vistaAplicatiu {
                 + "4. Sortir de l' aplicació");
 
         do {
+            
             System.out.println("Quina opció vols?");
-//            if (lector.hasNext()) {
-//                opcio = 0;
-//            }else{
-                opcio = lector.nextInt();
-//            }
+
+            opcio = lector.nextInt();
+ 
             
         } while (comprovarMenu1(opcio));
 
@@ -42,7 +41,7 @@ public class vistaAplicatiu {
     public boolean comprovarMenu1(int opcio) {
         boolean comprovar = true;
 
-        if (opcio < 0 && opcio < 5) {
+        if (opcio > 0 && opcio < 5) {
             comprovar = false;
         }
 
@@ -63,7 +62,7 @@ public class vistaAplicatiu {
         int opcio;
 
         System.out.println("MENÚ: \n"
-                + "Quin tipus de figura vols crear?"
+                + "Quin tipus de figura vols crear?\n"
                 + "1. Cercle.\n"
                 + "2. Rombe.\n"
                 + "3. Trapezi.\n"
