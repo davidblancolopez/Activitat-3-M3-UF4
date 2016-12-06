@@ -2,6 +2,7 @@ package control;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Iterator;
 import model.Figura;
 import model.Cercle;
 import model.Rombe;
@@ -140,7 +141,7 @@ public class controlAplicatiu {
     }
 
     /**
-     *
+     *MEtode que serveix per a veure el tipus de figura que l'usuari ha escollit per a que es mostrin.
      * @param opcio
      */
     public void respostaUsuariMenuVeureFigures(int opcio) {
@@ -148,10 +149,12 @@ public class controlAplicatiu {
         switch (opcio) {
             //Veure cercle.
             case 1:
-                for (int i = 0; i < coleccioFigures.size(); i++) {
-                    if (coleccioFigures.get(i) instanceof Cercle) {
-                        coleccioFigures.get(i).toString();
-                    }
+                Iterator IT = new coleccioFigures.iterator();
+                while(IT.hasNext()){
+                    Object contenido = IT.next();
+                    Figura figures = (Figura) contenido;
+                    va.mostrarFigures(figures);
+                    
                 }
 
                 break;

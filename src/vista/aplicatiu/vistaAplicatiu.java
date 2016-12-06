@@ -1,6 +1,7 @@
 package vista.aplicatiu;
 
 import java.util.Scanner;
+import model.Figura;
 
 public class vistaAplicatiu {
 
@@ -259,4 +260,25 @@ public class vistaAplicatiu {
         return nom;
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
+     * ***************************************************************************************
+     * OPCIONS PER A DEMANA LA FIGURA A MODIFICAR.********************************************
+     *****************************************************************************************
+     */
+    
+    public void mostrarFigures(Figura figures){
+        System.out.println(figures);
+    }
+    
+    
 }
