@@ -13,7 +13,7 @@ public class controlAplicatiu {
 
     vistaAplicatiu va = new vistaAplicatiu();
 
-    private ArrayList<Figura> coleccioFigures;
+    private ArrayList<Figura> coleccioFigures = new ArrayList<>();
 
     /**
      * Metode que controla tot l'aplicatiu.

@@ -88,7 +88,7 @@ public class vistaAplicatiu {
         int opcio;
 
         System.out.println("MENÚ: \n"
-                + "Quin tipus de figura vols veure?"
+                + "Quin tipus de figura vols veure? \n"
                 + "1. Cercle.\n"
                 + "2. Rombe.\n"
                 + "3. Trapezi.\n"
@@ -227,7 +227,7 @@ public class vistaAplicatiu {
         int opcio;
 
         System.out.println("MENÚ: \n"
-                + "Quin tipus de figura vols modificar?"
+                + "Quin tipus de figura vols modificar? \n"
                 + "1. Cercle.\n"
                 + "2. Rombe.\n"
                 + "3. Trapezi.\n"
