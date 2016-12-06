@@ -5,9 +5,10 @@ import control.controlAplicatiu;
 
 
 public class Activitat3M3UF4 {
-controlAplicatiu control = new controlAplicatiu();
+
 
     public static void main(String[] args) {
+        controlAplicatiu control = new controlAplicatiu();
         control.aplicatiu();
     }
     

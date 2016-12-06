@@ -22,10 +22,12 @@ public class vistaAplicatiu {
 
         do {
             System.out.println("Quina opció vols?");
-            if (lector.hasNext()) {
-                opcio = 0;
-            }
-            opcio = lector.nextInt();
+//            if (lector.hasNext()) {
+//                opcio = 0;
+//            }else{
+                opcio = lector.nextInt();
+//            }
+            
         } while (comprovarMenu1(opcio));
 
         return opcio;
