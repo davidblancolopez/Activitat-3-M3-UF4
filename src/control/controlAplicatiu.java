@@ -151,7 +151,7 @@ public class controlAplicatiu {
             case 1:
                 for (Figura i : coleccioFigures) {
                     if (i instanceof Cercle) {
-                        System.out.println();
+                        System.out.println(i.toString());
                     }
                 }
                 break;

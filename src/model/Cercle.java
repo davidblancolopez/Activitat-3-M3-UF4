@@ -33,7 +33,7 @@ final public class Cercle extends Figura {
 
     @Override
     public String toString() {
-        return "Cercle{" + "radi=" + radi + '}';
+        return "Cercle{" + "nom= " + nom + "radi=" + radi + '}';
     }
     
     

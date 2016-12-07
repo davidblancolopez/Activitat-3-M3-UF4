@@ -120,7 +120,7 @@ public class vistaAplicatiu {
     public String mostrarCrearNom() {
         String nom;
 
-        System.out.println("Introdueix el nom de la fugra: ");
+        System.out.println("Introdueix el nom de la figura: ");
         nom = lector.next();
 
         return nom;
