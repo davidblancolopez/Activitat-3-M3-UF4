@@ -38,7 +38,7 @@ final public class Regular extends Poligon{
     
     @Override
     public String toString() {
-        return "Regular{" + "midaCostats=" + midaCostats + ", costats=" + costats + '}';
+        return "Regular{" + "midaCostats= " + midaCostats + ", costats= " + costats + ", area= " + this.getAreaRegular(midaCostats) +'}';
     }
     
     
