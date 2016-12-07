@@ -14,7 +14,7 @@ public class controlAplicatiu {
 
     vistaAplicatiu va = new vistaAplicatiu();
 
-    private ArrayList<Figura> coleccioFigures = new ArrayList<>();
+    public ArrayList<Figura> coleccioFigures = new ArrayList<>();
 
     /**
      * Metode que controla tot l'aplicatiu.
@@ -149,43 +149,36 @@ public class controlAplicatiu {
         switch (opcio) {
             //Veure cercle.
             case 1:
-                Iterator IT = new coleccioFigures.iterator();
-                while(IT.hasNext()){
-                    Object contenido = IT.next();
-                    Figura figures = (Figura) contenido;
-                    va.mostrarFigures(figures);
-                    
-                }
-
+              
                 break;
 
             //Veure rombe.
             case 2:
-                for (int i = 0; i < coleccioFigures.size(); i++) {
-                    if (coleccioFigures.get(i) instanceof Rombe) {
-                        coleccioFigures.get(i).toString();
-                    }
-                }
+//                for (int i = 0; i < coleccioFigures.size(); i++) {
+//                    if (coleccioFigures.get(i) instanceof Rombe) {
+//                        coleccioFigures.get(i).toString();
+//                    }
+//                }
 
                 break;
 
             //Veure trapezi.
             case 3:
-                for (int i = 0; i < coleccioFigures.size(); i++) {
-                    if (coleccioFigures.get(i) instanceof Trapezi) {
-                        coleccioFigures.get(i).toString();
-                    }
-                }
+//                for (int i = 0; i < coleccioFigures.size(); i++) {
+//                    if (coleccioFigures.get(i) instanceof Trapezi) {
+//                        coleccioFigures.get(i).toString();
+//                    }
+//                }
 
                 break;
 
             //Veure regular.
             case 4:
-                for (int i = 0; i < coleccioFigures.size(); i++) {
-                    if (coleccioFigures.get(i) instanceof Regular) {
-                        coleccioFigures.get(i).toString();
-                    }
-                }
+//                for (int i = 0; i < coleccioFigures.size(); i++) {
+//                    if (coleccioFigures.get(i) instanceof Regular) {
+//                        coleccioFigures.get(i).toString();
+//                    }
+//                }
 
                 break;
         }
@@ -193,9 +186,17 @@ public class controlAplicatiu {
 
     
     
-    
-    
-    
+    ///PRUEBAS
+    public void mostrarFiguraProva(){
+          Iterator IT = new coleccioFigures.iterator();
+                while(IT.hasNext()){
+                    Object contenido = IT.next();
+                    Figura figures = (Figura) contenido;
+                    va.mostrarFigures(figures);
+                    
+                }
+    }
+    /////
     
     
     
