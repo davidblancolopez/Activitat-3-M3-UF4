@@ -10,6 +10,11 @@ public class Figura {
     public Figura (String nom){
         this.nom = nom; 
     }
+
+    @Override
+    public String toString() {
+        return "Figura: ";
+    }
     
     
 }

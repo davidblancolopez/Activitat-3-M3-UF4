@@ -149,7 +149,11 @@ public class controlAplicatiu {
         switch (opcio) {
             //Veure cercle.
             case 1:
-              
+                for (Figura i : coleccioFigures) {
+                    if (i instanceof Cercle) {
+                        System.out.println();
+                    }
+                }
                 break;
 
             //Veure rombe.
@@ -188,13 +192,7 @@ public class controlAplicatiu {
     
     ///PRUEBAS
     public void mostrarFiguraProva(){
-          Iterator IT = new coleccioFigures.iterator();
-                while(IT.hasNext()){
-                    Object contenido = IT.next();
-                    Figura figures = (Figura) contenido;
-                    va.mostrarFigures(figures);
-                    
-                }
+          
     }
     /////
     
