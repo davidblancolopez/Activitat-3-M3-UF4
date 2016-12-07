@@ -20,7 +20,8 @@ public class Trapezi extends NoRegular{
 
     @Override
     public String toString() {
-        return "Trapezi{" + "baseMajor=" + baseMajor + ", baseMenor=" + baseMenor + ", altura=" + altura + ", nombreCostats=" + nombreCostats + '}';
+        return "Trapezi{" + "baseMajor=" + baseMajor + ", baseMenor=" + baseMenor + ", altura=" + altura +
+                ", nombreCostats=" + nombreCostats + ", area= " + this.getAreaTrapezi() +'}';
     }
     
     
