@@ -42,11 +42,9 @@ public class controlAplicatiu {
     }
 
     public void modificarFigura() {
-        
+
         respostaUsuariMenuModificar();
-        
-        
-        
+
     }
 
     /**
@@ -141,7 +139,9 @@ public class controlAplicatiu {
     }
 
     /**
-     *MEtode que serveix per a veure el tipus de figura que l'usuari ha escollit per a que es mostrin.
+     * MEtode que serveix per a veure el tipus de figura que l'usuari ha
+     * escollit per a que es mostrin.
+     *
      * @param opcio
      */
     public void respostaUsuariMenuVeureFigures(int opcio) {
@@ -158,47 +158,37 @@ public class controlAplicatiu {
 
             //Veure rombe.
             case 2:
-//                for (int i = 0; i < coleccioFigures.size(); i++) {
-//                    if (coleccioFigures.get(i) instanceof Rombe) {
-//                        coleccioFigures.get(i).toString();
-//                    }
-//                }
+                for (Figura i : coleccioFigures) {
+                    if (i instanceof Rombe) {
+                        System.out.println(i.toString());
+                    }
+                }
 
                 break;
 
             //Veure trapezi.
             case 3:
-//                for (int i = 0; i < coleccioFigures.size(); i++) {
-//                    if (coleccioFigures.get(i) instanceof Trapezi) {
-//                        coleccioFigures.get(i).toString();
-//                    }
-//                }
+                for (Figura i : coleccioFigures) {
+                    if (i instanceof Trapezi) {
+                        System.out.println(i.toString());
+                    }
+                }
 
                 break;
 
             //Veure regular.
             case 4:
-//                for (int i = 0; i < coleccioFigures.size(); i++) {
-//                    if (coleccioFigures.get(i) instanceof Regular) {
-//                        coleccioFigures.get(i).toString();
-//                    }
-//                }
-
+                for (Figura i : coleccioFigures) {
+                    if (i instanceof Regular) {
+                        System.out.println(i.toString());
+                    }
+                }
                 break;
         }
     }
 
-    
-    
-    ///PRUEBAS
-    public void mostrarFiguraProva(){
-          
-    }
-    /////
-    
-    
-    
-    
+
+
     public void respostaUsuariMenuModificar() {
         int opcio;
         String nom;
@@ -208,7 +198,7 @@ public class controlAplicatiu {
 
         switch (opcio) {
             case 1:
-                
+
                 break;
 
             case 2:
@@ -220,16 +210,13 @@ public class controlAplicatiu {
                 break;
 
             case 4:
-                
+
                 break;
         }
     }
-    
-    public void buscarFiguraModificar(String nom){
+
+    public void buscarFiguraModificar(String nom) {
 
     }
-    
-    
-    
-    
+
 }
