@@ -192,35 +192,50 @@ public class controlAplicatiu {
     public void respostaUsuariMenuModificar() {
         int opcio;
         String nom;
+        boolean encontrado;
 
         opcio = va.mostrarMenuModificarFigures();
         nom = va.mostrarDemanarNomFiguraModificar();
 
         switch (opcio) {
+            //Modificar Cercle
             case 1:
-                    
+                encontrado = buscarFiguraModificar(nom); 
+                
                 break;
-
+            //Modificar Rombe
             case 2:
 
                 break;
-
+            //Modificar Trapezi     
             case 3:
 
                 break;
-
+            //Modificar Regular
             case 4:
 
                 break;
         }
     }
 
-    public void buscarFiguraModificar(String nom) {
+    public boolean buscarFiguraModificar(String nom) {
+        boolean encontrado = false;
         
         for (Figura i : coleccioFigures) {
- 
+            if (i.getNom() == nom) {
+                encontrado = true;
+            }
         }
-        
+        return encontrado;
+    }
+    
+    
+    public void modificacioFigura(boolean encontrado){
+        if (encontrado) {
+            
+        }else{
+            System.out.println("No s'ha trobat la figura indicada.");
+        }
     }
 
 }
