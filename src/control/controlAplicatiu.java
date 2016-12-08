@@ -198,7 +198,7 @@ public class controlAplicatiu {
 
         switch (opcio) {
             case 1:
-
+                    
                 break;
 
             case 2:
@@ -216,7 +216,11 @@ public class controlAplicatiu {
     }
 
     public void buscarFiguraModificar(String nom) {
-
+        
+        for (Figura i : coleccioFigures) {
+ 
+        }
+        
     }
 
 }

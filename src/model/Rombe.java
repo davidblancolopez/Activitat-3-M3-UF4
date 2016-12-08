@@ -21,7 +21,7 @@ public class Rombe extends NoRegular{
     
     @Override
     public String toString() {
-        return "Rombe{" + "diagonalMajor=" + diagonalMajor + ", diagonalMenor=" + diagonalMenor + ", nombreCostats=" + nombreCostats 
+        return "Rombe{"+ "Nom: " + this.nom + ", diagonalMajor=" + diagonalMajor + ", diagonalMenor=" + diagonalMenor + ", nombreCostats=" + nombreCostats 
                 + ", area= " + this.getAreaRombe() +'}';
     }
     

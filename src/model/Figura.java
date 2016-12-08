@@ -13,7 +13,7 @@ public class Figura {
 
     @Override
     public String toString() {
-        return "Figura: ";
+        return  (nom + " : ");
     }
     
     
