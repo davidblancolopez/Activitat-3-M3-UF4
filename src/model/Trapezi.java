@@ -19,6 +19,24 @@ public class Trapezi extends NoRegular{
         return (( (baseMajor + baseMenor) /2) * altura);
     }
 
+    public void setBaseMajor(double baseMajor) {
+        this.baseMajor = baseMajor;
+    }
+
+    public void setBaseMenor(double baseMenor) {
+        this.baseMenor = baseMenor;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public void setDiagonal(double diagonal) {
+        this.diagonal = diagonal;
+    }
+    
+    
+
     @Override
     public String toString() {
         return "Trapezi{" + "Nom: " + this.nom + ", baseMajor=" + baseMajor + ", baseMenor=" + baseMenor + ", altura=" + altura + ", diagonal= " + diagonal +

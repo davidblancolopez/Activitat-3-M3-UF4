@@ -17,6 +17,15 @@ public class Rombe extends NoRegular{
         return ((diagonalMajor * diagonalMenor) /2);
     }
 
+    public void setDiagonalMajor(double diagonalMajor) {
+        this.diagonalMajor = diagonalMajor;
+    }
+
+    public void setDiagonalMenor(double diagonalMenor) {
+        this.diagonalMenor = diagonalMenor;
+    }
+
+    
     
     
     @Override

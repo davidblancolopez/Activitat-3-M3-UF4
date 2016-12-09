@@ -118,8 +118,8 @@ public class controlAplicatiu {
                 double bm = va.mostrarIntroduirBase(missatgeBase2);
 
                 double altura = va.mostrarIntroduirAltura();
-                
-                double diagonal = va.mostrarIntroduirDiagonal();
+
+                double diagonal = va.mostrarIntroduirDiagonalTrapezi();
 
                 coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura, diagonal));
 
@@ -217,11 +217,12 @@ public class controlAplicatiu {
     }
 
     /**
-     * Metode que busca i modifica la figura Cercle que coincideix amb el nom introduit. 
-     * @param nom 
+     * Metode que busca i modifica la figura Cercle que coincideix amb el nom
+     * introduit.
+     *
+     * @param nom
      */
     public void buscarCercleModificar(String nom) {
-        double radi;
 
         Cercle c;
         for (Figura j : coleccioFigures) {
@@ -234,43 +235,57 @@ public class controlAplicatiu {
     }
 
     /**
-     * Metode que busca i modifica la figura Rombe que coincideix amb el nom introduit. 
-     * @param nom 
+     * Metode que busca i modifica la figura Rombe que coincideix amb el nom
+     * introduit.
+     *
+     * @param nom
      */
     public void buscarRombeModificar(String nom) {
-        double DM, dm;
-        
+
+        String missatgeDiagonal1 = "Introdueix la mida de la diagonal major.";
+        String missatgeDiagonal2 = "Introdueix la mida de la diagonal menor.";
+
         Rombe r;
         for (Figura j : coleccioFigures) {
             if ((j instanceof Rombe) && ((Rombe) j).getNom().equals(nom)) {
                 r = (Rombe) j;
-                
+
+                r.setDiagonalMajor(va.mostrarIntroduirMidaDiagonal(missatgeDiagonal1));
+                r.setDiagonalMenor(va.mostrarIntroduirMidaDiagonal(missatgeDiagonal2));
             }
 
         }
     }
-    
-        /**
-     * Metode que busca i modifica la figura Trapezi que coincideix amb el nom introduit. 
-     * @param nom 
+
+    /**
+     * Metode que busca i modifica la figura Trapezi que coincideix amb el nom
+     * introduit.
+     *
+     * @param nom
      */
     public void buscarTrapeziModificar(String nom) {
         double BM, bm, altura, diagonal;
-        
+
+        String missatgeBase1 = "Introdueix la mida de la base major.";
+        String missatgeBase2 = "Introdueix la mida de la base menor.";
+
         Trapezi t;
         for (Figura j : coleccioFigures) {
             if ((j instanceof Trapezi) && ((Trapezi) j).getNom().equals(nom)) {
                 t = (Trapezi) j;
 
+                t.setBaseMajor(va.mostrarIntroduirBase(missatgeBase1));
+                t.setBaseMenor(va.mostrarIntroduirBase(missatgeBase2));
             }
 
         }
     }
-    
-    
-        /**
-     * Metode que busca i modifica la figura Regular que coincideix amb el nom introduit. 
-     * @param nom 
+
+    /**
+     * Metode que busca i modifica la figura Regular que coincideix amb el nom
+     * introduit.
+     *
+     * @param nom
      */
     public void buscarRegularModificar(String nom) {
         double midaCostats;
