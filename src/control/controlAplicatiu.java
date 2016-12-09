@@ -187,12 +187,9 @@ public class controlAplicatiu {
         }
     }
 
-
-
     public void respostaUsuariMenuModificar() {
         int opcio;
         String nom;
-        boolean encontrado;
 
         opcio = va.mostrarMenuModificarFigures();
         nom = va.mostrarDemanarNomFiguraModificar();
@@ -200,41 +197,86 @@ public class controlAplicatiu {
         switch (opcio) {
             //Modificar Cercle
             case 1:
-                encontrado = buscarFiguraModificar(nom); 
-                
+                buscarCercleModificar(nom);
                 break;
             //Modificar Rombe
             case 2:
-
+                buscarRombeModificar(nom);
                 break;
             //Modificar Trapezi     
             case 3:
-
+                buscarTrapeziModificar(nom);
                 break;
             //Modificar Regular
             case 4:
-
+                buscarRegularModificar(nom);
                 break;
         }
     }
 
-    public boolean buscarFiguraModificar(String nom) {
-        boolean encontrado = false;
-        
-        for (Figura i : coleccioFigures) {
-            if (i.getNom() == nom) {
-                encontrado = true;
+    /**
+     * Metode que busca i modifica la figura Cercle que coincideix amb el nom introduit. 
+     * @param nom 
+     */
+    public void buscarCercleModificar(String nom) {
+        double radi;
+
+        Cercle c;
+        for (Figura j : coleccioFigures) {
+            if ((j instanceof Cercle) && ((Cercle) j).getNom().equals(nom)) {
+                c = (Cercle) j;
+                c.setRadi(va.mostrarIntroduirRadi());
             }
+
         }
-        return encontrado;
+    }
+
+    /**
+     * Metode que busca i modifica la figura Rombe que coincideix amb el nom introduit. 
+     * @param nom 
+     */
+    public void buscarRombeModificar(String nom) {
+
+        Rombe r;
+        for (Figura j : coleccioFigures) {
+            if ((j instanceof Rombe) && ((Rombe) j).getNom().equals(nom)) {
+                r = (Rombe) j;
+
+            }
+
+        }
+    }
+    
+        /**
+     * Metode que busca i modifica la figura Trapezi que coincideix amb el nom introduit. 
+     * @param nom 
+     */
+    public void buscarTrapeziModificar(String nom) {
+
+        Trapezi t;
+        for (Figura j : coleccioFigures) {
+            if ((j instanceof Trapezi) && ((Trapezi) j).getNom().equals(nom)) {
+                t = (Trapezi) j;
+
+            }
+
+        }
     }
     
     
-    public void modificacioFigura(boolean encontrado){
-        if (encontrado) {
-            
-        }else{
-            System.out.println("No s'ha trobat la figura indicada.");
+        /**
+     * Metode que busca i modifica la figura Regular que coincideix amb el nom introduit. 
+     * @param nom 
+     */
+    public void buscarRegularModificar(String nom) {
+
+        Regular r;
+        for (Figura j : coleccioFigures) {
+            if ((j instanceof Regular) && ((Regular) j).getNom().equals(nom)) {
+                r = (Regular) j;
+
+            }
+
         }
     }
 
