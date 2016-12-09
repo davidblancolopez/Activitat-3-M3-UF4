@@ -211,6 +211,16 @@ public class vistaAplicatiu {
 
         return altura;
     }
+    
+    public double mostrarIntroduirDiagonal(){
+        double diagonal;
+        
+        System.out.println("Introdueix la diagonal del trapezi: ");
+        diagonal = lector.nextDouble();
+        
+        return diagonal;
+  
+    }
 
     /**
      * *****************************************************************************************

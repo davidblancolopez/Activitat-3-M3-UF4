@@ -118,8 +118,10 @@ public class controlAplicatiu {
                 double bm = va.mostrarIntroduirBase(missatgeBase2);
 
                 double altura = va.mostrarIntroduirAltura();
+                
+                double diagonal = va.mostrarIntroduirDiagonal();
 
-                coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura));
+                coleccioFigures.add(new Trapezi(nomTrapezi, BM, bm, altura, diagonal));
 
                 break;
 
@@ -236,12 +238,13 @@ public class controlAplicatiu {
      * @param nom 
      */
     public void buscarRombeModificar(String nom) {
-
+        double DM, dm;
+        
         Rombe r;
         for (Figura j : coleccioFigures) {
             if ((j instanceof Rombe) && ((Rombe) j).getNom().equals(nom)) {
                 r = (Rombe) j;
-
+                
             }
 
         }
@@ -252,7 +255,8 @@ public class controlAplicatiu {
      * @param nom 
      */
     public void buscarTrapeziModificar(String nom) {
-
+        double BM, bm, altura, diagonal;
+        
         Trapezi t;
         for (Figura j : coleccioFigures) {
             if ((j instanceof Trapezi) && ((Trapezi) j).getNom().equals(nom)) {
@@ -269,6 +273,7 @@ public class controlAplicatiu {
      * @param nom 
      */
     public void buscarRegularModificar(String nom) {
+        double midaCostats;
 
         Regular r;
         for (Figura j : coleccioFigures) {
