@@ -264,7 +264,6 @@ public class controlAplicatiu {
      * @param nom
      */
     public void buscarTrapeziModificar(String nom) {
-        double BM, bm, altura, diagonal;
 
         String missatgeBase1 = "Introdueix la mida de la base major.";
         String missatgeBase2 = "Introdueix la mida de la base menor.";
@@ -276,6 +275,10 @@ public class controlAplicatiu {
 
                 t.setBaseMajor(va.mostrarIntroduirBase(missatgeBase1));
                 t.setBaseMenor(va.mostrarIntroduirBase(missatgeBase2));
+                
+                t.setDiagonal(va.mostrarIntroduirDiagonalTrapezi());
+                
+                t.setAltura(va.mostrarIntroduirAltura());
             }
 
         }
@@ -295,6 +298,7 @@ public class controlAplicatiu {
             if ((j instanceof Regular) && ((Regular) j).getNom().equals(nom)) {
                 r = (Regular) j;
 
+                r.setMidaCostats(va.mostrarIntroduirMidaCostats());
             }
 
         }
