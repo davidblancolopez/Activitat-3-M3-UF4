@@ -23,13 +23,11 @@ final public class Regular extends Poligon {
     }
 
     public double getAngle() {
-        double angle;
-        return angle = (360 / this.costats);
+        return (360 / this.costats);
     }
 
     public double getApotema() {
-        double apotema;
-        return apotema = this.midaCostats / (Math.tan(Math.toRadians(getAngle() / 2)) * 2);
+        return this.midaCostats / (Math.tan(Math.toRadians(getAngle() / 2)) * 2);
     }
 
     public double getAreaRegular() {
