@@ -1,7 +1,10 @@
 package model;
 
+import java.text.DecimalFormat;
+
 final public class Regular extends Poligon {
 
+    DecimalFormat df = new DecimalFormat("#.##");
     double midaCostats;
     int costats;
 
@@ -19,11 +22,11 @@ final public class Regular extends Poligon {
         this.midaCostats = mida;
     }
 
-    public double getAreaRegular(double midaCostats) {
+    public double getAreaRegular() {
         double angle = 360 / costats;
-        double tangent = Math.tan(Math.toRadians(angle /2) * 2);
-        double apotema = midaCostats / (tangent);
-        double area = ( (costats * midaCostats * apotema) /2 );
+        double apotema = (2*Math.tan(Math.toRadians(360/costats)));
+        double area = ( (getPerimetre() * apotema) /2);
+        df.format(area);
         return area;
 
     }
@@ -34,7 +37,7 @@ final public class Regular extends Poligon {
 
     @Override
     public String toString() {
-        return "Regular{" + "Nom: " + this.nom + ", midaCostats= " + midaCostats + ", costats= " + costats + ", area= " + this.getAreaRegular(midaCostats) + '}';
+        return "Regular{" + "Nom: " + this.nom + ", midaCostats= " + midaCostats + ", costats= " + costats + ", area= " + this.getAreaRegular() + '}';
     }
 
 }

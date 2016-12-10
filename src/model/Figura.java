@@ -2,7 +2,7 @@
 package model;
 
 
-public class Figura {
+public abstract class Figura {
     double area;
     double perimetre;
     String nom;
