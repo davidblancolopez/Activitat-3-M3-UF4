@@ -18,6 +18,10 @@ public class Trapezi extends NoRegular{
     public double getAreaTrapezi(){
         return (( (baseMajor + baseMenor) /2) * altura);
     }
+    
+    public double getPerimetreTrapezi(){
+        return(this.baseMajor + this.baseMenor + (2 * this.diagonal));
+    }
 
     public void setBaseMajor(double baseMajor) {
         this.baseMajor = baseMajor;
@@ -40,7 +44,7 @@ public class Trapezi extends NoRegular{
     @Override
     public String toString() {
         return "Trapezi{" + "Nom: " + this.nom + ", baseMajor=" + baseMajor + ", baseMenor=" + baseMenor + ", altura=" + altura + ", diagonal= " + diagonal +
-                ", nombreCostats=" + nombreCostats + ", area= " + this.getAreaTrapezi() +'}';
+                ", nombreCostats=" + nombreCostats + ", area= " + this.getAreaTrapezi() + ", perimetre: " + getPerimetreTrapezi() +'}';
     }
     
     
