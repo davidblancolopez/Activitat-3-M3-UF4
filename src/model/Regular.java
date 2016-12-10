@@ -22,13 +22,20 @@ final public class Regular extends Poligon {
         this.midaCostats = mida;
     }
 
+    public double getAngle() {
+        double angle;
+        return angle = (360 / this.costats);
+    }
+
+    public double getApotema() {
+        double apotema;
+        return apotema = this.midaCostats / (Math.tan(Math.toRadians(getAngle() / 2)) * 2);
+    }
+
     public double getAreaRegular() {
-        double angle = 360 / costats;
-        double apotema = (2*Math.tan(Math.toRadians(360/costats)));
-        double area = ( (getPerimetre() * apotema) /2);
+        area = ((getPerimetre() * getApotema()) / 2);
         df.format(area);
         return area;
-
     }
 
     public double getPerimetre() {
