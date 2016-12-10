@@ -192,6 +192,8 @@ public class controlAplicatiu {
     public void respostaUsuariMenuModificar() {
         int opcio;
         String nom;
+        
+        mostrarFigures();
 
         opcio = va.mostrarMenuModificarFigures();
         nom = va.mostrarDemanarNomFiguraModificar();
@@ -213,6 +215,17 @@ public class controlAplicatiu {
             case 4:
                 buscarRegularModificar(nom);
                 break;
+        }
+    }
+    
+    /**
+     * Metode per a mostrar totes les figures que estan guardades.
+     */
+    public void mostrarFigures(){
+        for (Figura i : coleccioFigures) {
+                 
+            System.out.println(i.toString());
+                    
         }
     }
 
@@ -291,7 +304,6 @@ public class controlAplicatiu {
      * @param nom
      */
     public void buscarRegularModificar(String nom) {
-        double midaCostats;
 
         Regular r;
         for (Figura j : coleccioFigures) {
