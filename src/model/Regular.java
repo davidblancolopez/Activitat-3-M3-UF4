@@ -21,8 +21,8 @@ final public class Regular extends Poligon {
 
     public double getAreaRegular(double midaCostats) {
         double angle = 360 / costats;
-        double tangent = Math.tan(Math.toRadians(angle /2));
-        double apotema = midaCostats / (2 * tangent);
+        double tangent = Math.tan(Math.toRadians(angle /2) * 2);
+        double apotema = midaCostats / (tangent);
         double area = ( (costats * midaCostats * apotema) /2 );
         return area;
 

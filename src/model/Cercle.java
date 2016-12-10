@@ -3,7 +3,6 @@ package model;
 final public class Cercle extends Figura {
 
     double radi;
-    final double pi = 3.14;
 
     public Cercle(String nom, double radi) {
         super(nom);
@@ -24,11 +23,11 @@ final public class Cercle extends Figura {
     }
 
     public double getAreaCercle(){
-        return (pi * Math.pow(radi, 2));
+        return (Math.PI * Math.pow(radi, 2));
     }
     
     public double getPerimetreCercle(){
-        return (2 *  pi * radi);
+        return (2 *  Math.PI * radi);
     }
 
     @Override
