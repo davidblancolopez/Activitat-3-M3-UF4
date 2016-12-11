@@ -4,6 +4,11 @@ final public class Cercle extends Figura {
 
     double radi;
 
+    /**
+     * Metodes constructor getters i setters
+     */
+    
+    
     public Cercle(String nom, double radi) {
         super(nom);
         this.radi = radi;

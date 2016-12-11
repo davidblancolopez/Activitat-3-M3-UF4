@@ -34,7 +34,7 @@ public class vistaAplicatiu {
     }
 
     /**
-     * MEtode que comprova que la opció introduida als menus es correcte.
+     * Metode que comprova que la opció introduida als menus es correcte.
      *
      * @param opcio
      * @return
@@ -212,6 +212,10 @@ public class vistaAplicatiu {
         return altura;
     }
     
+    /**
+     * Metode que demana la medida de la diagonal del trapezi
+     * @return 
+     */
     public double mostrarIntroduirDiagonalTrapezi(){
         double diagonal;
         
@@ -286,6 +290,10 @@ public class vistaAplicatiu {
      *****************************************************************************************
      */
     
+    /**
+     * 
+     * @param figures 
+     */
     public void mostrarFigures(Figura figures){
         System.out.println(figures);
     }

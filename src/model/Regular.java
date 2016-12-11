@@ -7,6 +7,10 @@ final public class Regular extends Poligon {
     DecimalFormat df = new DecimalFormat("#.##");
     double midaCostats;
     int costats;
+    
+    /**
+     * Metodes constructor getters i setters
+     */
 
     public Regular(String nom, int costats, double midaCostats) {
         super(nom);

@@ -6,6 +6,10 @@ public class Trapezi extends NoRegular{
     double baseMajor, baseMenor, altura, diagonal;
     int nombreCostats;
     
+    /**
+     * Metodes constructor getters i setters
+     */
+    
     public Trapezi(String nom, double BM, double bm, double altura, double diagonal) {
         super(nom);
         this.baseMajor = BM;

@@ -11,6 +11,10 @@ public class Rombe extends NoRegular {
         this.diagonalMenor = dm;
         this.nombreCostats = 4;
     }
+    
+    /**
+     * Metodes constructor getters i setters
+     */
 
     public double getAreaRombe() {
         return ((diagonalMajor * diagonalMenor) / 2);

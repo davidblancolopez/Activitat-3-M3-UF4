@@ -7,6 +7,10 @@ public abstract class Figura {
     double perimetre;
     String nom;
     
+    /**
+     * Metodes constructor getters i setters
+     */
+    
     public Figura (String nom){
         this.nom = nom; 
     }

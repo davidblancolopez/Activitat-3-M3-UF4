@@ -26,6 +26,10 @@ public class controlAplicatiu {
 
     }
 
+    /**
+     * Metode que crida als metodes que creen figures, primer al que recull la opcio
+     * y despres envia l'opcio al metode que demana la informació de la nova figura.
+     */
     public void crearFigura() {
         int opcio;
 
@@ -34,13 +38,20 @@ public class controlAplicatiu {
 
     }
 
+    /**
+     * Metode que crida als metodes que serveixen per a mostrar un tipus de figura,
+     * primer al metode que recull la opcio escollida i despres envia l'opcio al metode que mostra les figures.
+     */
     public void mostrarFigura() {
         int opcio;
 
         opcio = va.mostrarMenuVeureFigures();
         respostaUsuariMenuVeureFigures(opcio);
     }
-
+    
+    /**
+     * Metode que crida al metode que serveix per a modificar figures.
+     */
     public void modificarFigura() {
 
         respostaUsuariMenuModificar();
@@ -77,7 +88,8 @@ public class controlAplicatiu {
     }
 
     /**
-     * Metode que conté les opcions del menu crear figures.
+     * Metode que conté les opcions del menu crear figures, segons la opcio es
+     * creara un tipus de figura diferent.
      *
      * @param opcio
      */
@@ -141,7 +153,7 @@ public class controlAplicatiu {
     }
 
     /**
-     * MEtode que serveix per a veure el tipus de figura que l'usuari ha
+     * Metode que serveix per a veure el tipus de figura que l'usuari ha
      * escollit per a que es mostrin.
      *
      * @param opcio
@@ -188,7 +200,12 @@ public class controlAplicatiu {
                 break;
         }
     }
-
+    
+    /**
+     * Aquest metode recull la opció de l'usuari mitjançant un metode i el nom a buscar
+     * amb un altre metode y segons el tipus escollit crida a un altre metode que busca la figura y si coincideix el nom
+     * la modifica.
+     */
     public void respostaUsuariMenuModificar() {
         int opcio;
         String nom;
